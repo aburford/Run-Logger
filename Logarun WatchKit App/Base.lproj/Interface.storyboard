@@ -1,29 +1,372 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="6724" systemVersion="14A389" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="13196" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6711"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3735"/>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="13051"/>
     </dependencies>
     <scenes>
-        <!--Interface Controller-->
+        <!--Edit Today's Run-->
+        <scene sceneID="DeN-Kw-W3B">
+            <objects>
+                <controller identifier="editRunView" title="Edit Today's Run" id="AZ6-tL-cp2" customClass="InterfaceController">
+                    <items>
+                        <label alignment="left" text="Miles:" id="uwp-VH-5vU">
+                            <color key="textColor" red="0.99607843139999996" green="0.99607843139999996" blue="0.86666666670000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="font" style="UICTFontTextStyleCaption2"/>
+                        </label>
+                        <label height="20" alignment="left" text="0.00" id="bTs-mv-ep1">
+                            <fontDescription key="font" type="system" pointSize="16"/>
+                        </label>
+                        <button width="1" alignment="left" title="Set Mileage" id="1zo-di-pPw">
+                            <color key="titleColor" red="0.99607843139999996" green="0.99607843139999996" blue="0.86666666670000003" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="backgroundColor" red="0.3411764706" green="0.42745098040000001" blue="0.2156862745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="setMileagePressed" destination="AZ6-tL-cp2" id="zEf-qy-adc"/>
+                            </connections>
+                        </button>
+                        <separator alignment="left" id="E2c-iF-Vis">
+                            <color key="color" red="0.99607843139999996" green="0.99607843139999996" blue="0.86666666670000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </separator>
+                        <button width="1" alignment="left" title="Refresh Mileage" id="WMu-1b-e2f">
+                            <color key="titleColor" red="0.99607843139999996" green="0.99607843139999996" blue="0.86666666670000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="backgroundColor" red="0.3411764706" green="0.42745098040000001" blue="0.2156862745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="refreshButtonPressed" destination="AgC-eL-Hgc" id="6gJ-Z7-MBG"/>
+                            </connections>
+                        </button>
+                        <label width="136" height="39.5" alignment="left" text="Edit Today's Run:" numberOfLines="2" id="uhF-gX-8TW">
+                            <color key="textColor" red="0.99607843139999996" green="0.99607843139999996" blue="0.86666666670000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="font" type="boldSystem" pointSize="16.5"/>
+                        </label>
+                        <separator width="136" alignment="left" id="67F-dn-oUS">
+                            <color key="color" red="0.99607843139999996" green="0.99607843139999996" blue="0.86666666670000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </separator>
+                        <label alignment="left" text="Time:" id="5Gl-p2-2Gu">
+                            <color key="textColor" red="0.99607843139999996" green="0.99607843139999996" blue="0.86666666670000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="font" style="UICTFontTextStyleCaption2"/>
+                        </label>
+                        <group width="1" height="50" alignment="left" id="5g8-ur-KSO">
+                            <items>
+                                <picker width="0.33300000000000002" height="1" alignment="left" focusStyle="sequence" indicatorMode="shownWhileFocused" id="4yl-cb-NoA">
+                                    <connections>
+                                        <action selector="hoursChanged:" destination="AZ6-tL-cp2" id="jYd-lr-ukQ"/>
+                                    </connections>
+                                </picker>
+                                <picker width="0.33300000000000002" height="1" alignment="left" focusStyle="sequence" indicatorMode="shownWhileFocused" id="Og1-a6-rgB">
+                                    <connections>
+                                        <action selector="minutesChanged:" destination="AZ6-tL-cp2" id="Gg8-IU-elD"/>
+                                    </connections>
+                                </picker>
+                                <picker width="0.33300000000000002" height="1" alignment="left" focusStyle="sequence" indicatorMode="shownWhileFocused" id="O9X-9o-WmF">
+                                    <connections>
+                                        <action selector="secondsChanged:" destination="AZ6-tL-cp2" id="lhH-4e-vBe"/>
+                                    </connections>
+                                </picker>
+                            </items>
+                        </group>
+                        <separator alignment="left" id="AQc-Ap-wt8">
+                            <color key="color" red="0.99607843139999996" green="0.99607843139999996" blue="0.86666666670000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </separator>
+                        <label alignment="left" text="Day Title" id="nAF-KJ-9sF">
+                            <color key="textColor" red="0.99607843139999996" green="0.99607843139999996" blue="0.86666666670000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </label>
+                        <button width="1" alignment="left" title="Set Day Title" id="54V-VT-Tq2">
+                            <color key="titleColor" red="0.99607843139999996" green="0.99607843139999996" blue="0.86666666670000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="backgroundColor" red="0.3411764706" green="0.42745098040000001" blue="0.2156862745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="dayTitlePressed" destination="AZ6-tL-cp2" id="UEK-NW-C8K"/>
+                            </connections>
+                        </button>
+                        <separator alignment="left" id="WVH-Nz-BID">
+                            <color key="color" red="0.99607843139999996" green="0.99607843139999996" blue="0.86666666670000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </separator>
+                        <label alignment="left" text="Daily Note" id="vJF-fu-NfX">
+                            <color key="textColor" red="0.99607843139999996" green="0.99607843139999996" blue="0.86666666670000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </label>
+                        <button width="1" alignment="left" title="Set Daily Note" id="wmA-oF-Fqw">
+                            <color key="titleColor" red="0.99607843139999996" green="0.99607843139999996" blue="0.86666666670000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="backgroundColor" red="0.3411764706" green="0.42745098040000001" blue="0.2156862745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="dailyNotePressed" destination="AZ6-tL-cp2" id="bVA-um-o8W"/>
+                            </connections>
+                        </button>
+                        <separator alignment="left" id="2BK-Ar-3FO">
+                            <color key="color" red="0.99607843139999996" green="0.99607843139999996" blue="0.86666666670000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </separator>
+                        <button width="1" alignment="left" title="Post Run" id="gQV-cZ-3Y1">
+                            <color key="titleColor" red="0.99607843139999996" green="0.99607843139999996" blue="0.86666666670000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="backgroundColor" red="0.3411764706" green="0.42745098040000001" blue="0.2156862745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="postButtonPressed" destination="AZ6-tL-cp2" id="NdN-IZ-87i"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <variation key="default">
+                        <mask key="items">
+                            <exclude reference="WMu-1b-e2f"/>
+                            <exclude reference="uhF-gX-8TW"/>
+                            <exclude reference="67F-dn-oUS"/>
+                        </mask>
+                    </variation>
+                    <connections>
+                        <outlet property="dailyNoteLbl" destination="vJF-fu-NfX" id="5wm-tW-zni"/>
+                        <outlet property="dayTitleLbl" destination="nAF-KJ-9sF" id="GBC-Kr-2V8"/>
+                        <outlet property="hoursPicker" destination="4yl-cb-NoA" id="kRV-4W-LlV"/>
+                        <outlet property="mileageLabel" destination="bTs-mv-ep1" id="Pyk-Cy-vGe"/>
+                        <outlet property="minutesPicker" destination="Og1-a6-rgB" id="x5y-2W-jnZ"/>
+                        <outlet property="postRunButton" destination="gQV-cZ-3Y1" id="dOa-Qd-swF"/>
+                        <outlet property="secondsPicker" destination="O9X-9o-WmF" id="qiW-Ge-gjZ"/>
+                        <outlet property="setDailyNoteButton" destination="wmA-oF-Fqw" id="J4Z-6d-j4a"/>
+                        <outlet property="setDayTitleButton" destination="54V-VT-Tq2" id="Gsu-pz-6RC"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="505" y="467"/>
+        </scene>
+        <!--Run Logger-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModuleProvider=""/>
-            </objects>
-            <point key="canvasLocation" x="235" y="347"/>
-        </scene>
-        <!--Glance Interface Controller-->
-        <scene sceneID="BOz-TT-tkC">
-            <objects>
-                <glanceController spacing="0.0" id="0uZ-2p-rRc" customClass="GlanceController" customModuleProvider="">
+                <controller identifier="mainView" title="Run Logger" id="AgC-eL-Hgc" customClass="HomeViewController">
                     <items>
-                        <group alignment="left" id="t8f-Gd-c4y"/>
-                        <group alignment="left" id="uCw-4Q-Ouw"/>
+                        <label width="1" alignment="left" hidden="YES" text="Mileage this week:" textAlignment="center" id="b9o-9y-bzf">
+                            <color key="textColor" red="0.99607843139999996" green="0.99607843139999996" blue="0.86666666670000003" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="font" type="system" pointSize="13"/>
+                        </label>
+                        <imageView alignment="center" hidden="YES" id="8eG-An-ecd"/>
+                        <label width="1" alignment="left" hidden="YES" textAlignment="center" numberOfLines="0" id="uQg-0M-gre">
+                            <color key="textColor" red="0.99607843139999996" green="0.99607843139999996" blue="0.86666666670000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="font" type="system" weight="ultraLight" pointSize="14.5"/>
+                        </label>
+                        <label width="1" alignment="left" hidden="YES" text="Refreshing..." textAlignment="center" id="0kc-QG-MGX">
+                            <color key="textColor" red="1" green="1" blue="0.83529411764705885" alpha="1" colorSpace="calibratedRGB"/>
+                        </label>
+                        <button width="1" alignment="left" hidden="YES" title="Refresh Mileage" id="6Uu-An-JBn">
+                            <color key="titleColor" red="0.99607843139999996" green="0.99607843139999996" blue="0.86666666670000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="backgroundColor" red="0.3411764706" green="0.42745098040000001" blue="0.2156862745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="refreshButtonPressed" destination="AgC-eL-Hgc" id="Q13-AG-iIp"/>
+                            </connections>
+                        </button>
+                        <separator alignment="left" hidden="YES" id="ZVE-gL-tPD">
+                            <color key="color" red="0.99607843139999996" green="0.99607843139999996" blue="0.86666666670000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </separator>
+                        <button width="1" alignment="left" hidden="YES" title="Edit Today's Run" id="ecR-rE-AYc">
+                            <color key="titleColor" red="0.99607843139999996" green="0.99607843139999996" blue="0.86666666670000003" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="backgroundColor" red="0.3411764706" green="0.42745098040000001" blue="0.2156862745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="editRunPressed" destination="AgC-eL-Hgc" id="IbG-jD-LJK"/>
+                            </connections>
+                        </button>
+                        <label width="136" height="157" alignment="left" text="Please Login On Your Phone" numberOfLines="0" id="VCZ-TS-oaw">
+                            <color key="textColor" red="0.99607843139999996" green="0.99607843139999996" blue="0.86666666670000003" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="font" type="system" pointSize="21"/>
+                        </label>
                     </items>
-                    <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="14"/>
-                </glanceController>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <connections>
+                        <outlet property="editRunButton" destination="ecR-rE-AYc" id="2yw-U1-9lb"/>
+                        <outlet property="firstSeparator" destination="ZVE-gL-tPD" id="E0y-Zv-DpM"/>
+                        <outlet property="graphTitleLbl" destination="b9o-9y-bzf" id="pER-Km-0gB"/>
+                        <outlet property="mileageLbl" destination="uQg-0M-gre" id="qy5-lj-rVl"/>
+                        <outlet property="pleaseLoginLabel" destination="VCZ-TS-oaw" id="JAg-Qr-HLh"/>
+                        <outlet property="refreshMileageButton" destination="6Uu-An-JBn" id="w1t-yi-Q3D"/>
+                        <outlet property="refreshingLbl" destination="0kc-QG-MGX" id="V8N-jF-zI7"/>
+                        <outlet property="ringImage" destination="8eG-An-ecd" id="Hyc-gi-9Dp"/>
+                    </connections>
+                </controller>
             </objects>
-            <point key="canvasLocation" x="235" y="672"/>
+            <point key="canvasLocation" x="235" y="446"/>
+        </scene>
+        <!--Set Mileage-->
+        <scene sceneID="Gee-qG-HC3">
+            <objects>
+                <controller identifier="editMileageView" title="Set Mileage" id="CuL-TH-bOu" customClass="NumberInputController">
+                    <items>
+                        <group width="1" height="0.20000000000000001" alignment="left" id="jnb-X3-bWh">
+                            <items>
+                                <button width="0.33329999999999999" height="1" alignment="left" title="AC" id="05n-69-ga0">
+                                    <color key="titleColor" red="0.62427884615384621" green="0.061200264459028222" blue="0.056086222198455105" alpha="1" colorSpace="calibratedRGB"/>
+                                    <connections>
+                                        <action selector="allClearPressed" destination="CuL-TH-bOu" id="sfN-I6-2cy"/>
+                                    </connections>
+                                </button>
+                                <label width="0.66659999999999997" height="1" alignment="left" text="Label" textAlignment="right" id="Sth-vR-sFd"/>
+                            </items>
+                        </group>
+                        <group width="1" height="0.20000000000000001" alignment="left" id="3Se-Sc-PXJ">
+                            <items>
+                                <button width="0.33329999999999999" height="1" alignment="left" title="1" id="xCd-fu-kmg">
+                                    <color key="titleColor" red="0.99607843139999996" green="0.99607843139999996" blue="0.86666666670000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    <connections>
+                                        <action selector="onePressed" destination="CuL-TH-bOu" id="hyw-Hn-3bn"/>
+                                    </connections>
+                                </button>
+                                <button width="0.33329999999999999" height="1" alignment="left" title="2" id="UnS-lP-a24">
+                                    <color key="titleColor" red="0.99607843139999996" green="0.99607843139999996" blue="0.86666666670000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    <connections>
+                                        <action selector="twoPressed" destination="CuL-TH-bOu" id="S8U-fj-C4a"/>
+                                    </connections>
+                                </button>
+                                <button width="0.33329999999999999" height="1" alignment="left" title="3" id="v4x-SA-l6H">
+                                    <color key="titleColor" red="0.99607843139999996" green="0.99607843139999996" blue="0.86666666670000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    <connections>
+                                        <action selector="threePressed" destination="CuL-TH-bOu" id="z9x-Oy-a1W"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <group width="1" height="0.20000000000000001" alignment="left" id="OoW-Pp-Ovf">
+                            <items>
+                                <button width="0.33329999999999999" height="1" alignment="left" title="4" id="Ylz-SB-MRz">
+                                    <color key="titleColor" red="0.99607843139999996" green="0.99607843139999996" blue="0.86666666670000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    <connections>
+                                        <action selector="fourPressed" destination="CuL-TH-bOu" id="D6j-Nd-4FV"/>
+                                    </connections>
+                                </button>
+                                <button width="0.33329999999999999" height="1" alignment="left" title="5" id="Dll-NK-7k1">
+                                    <color key="titleColor" red="0.99607843139999996" green="0.99607843139999996" blue="0.86666666670000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    <connections>
+                                        <action selector="fivePressed" destination="CuL-TH-bOu" id="Bgf-VQ-o2n"/>
+                                    </connections>
+                                </button>
+                                <button width="0.33329999999999999" height="1" alignment="left" title="6" id="YfM-wN-9Dj">
+                                    <color key="titleColor" red="0.99607843139999996" green="0.99607843139999996" blue="0.86666666670000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    <connections>
+                                        <action selector="sixPressed" destination="CuL-TH-bOu" id="prU-uk-mYH"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <group width="1" height="0.20000000000000001" alignment="left" id="T0i-Lv-p0j">
+                            <items>
+                                <button width="0.33329999999999999" height="1" alignment="left" title="7" id="I5r-Dy-hlz">
+                                    <color key="titleColor" red="0.99607843139999996" green="0.99607843139999996" blue="0.86666666670000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    <connections>
+                                        <action selector="sevenPressed" destination="CuL-TH-bOu" id="gvt-Bo-ccv"/>
+                                    </connections>
+                                </button>
+                                <button width="0.33329999999999999" height="1" alignment="left" title="8" id="jp7-Ne-bdN">
+                                    <color key="titleColor" red="0.99607843139999996" green="0.99607843139999996" blue="0.86666666670000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    <connections>
+                                        <action selector="eightPressed" destination="CuL-TH-bOu" id="oSJ-pz-PAB"/>
+                                    </connections>
+                                </button>
+                                <button width="0.33329999999999999" height="1" alignment="left" title="9" id="v4h-eE-f7q">
+                                    <color key="titleColor" red="0.99607843139999996" green="0.99607843139999996" blue="0.86666666670000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    <connections>
+                                        <action selector="ninePressed" destination="CuL-TH-bOu" id="CaB-Mo-7BU"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <group width="1" height="0.20000000000000001" alignment="left" id="ARd-Ae-KLT">
+                            <items>
+                                <button width="0.33329999999999999" height="1" alignment="left" title="." id="eft-LA-lEq">
+                                    <color key="titleColor" red="0.99607843139999996" green="0.99607843139999996" blue="0.86666666670000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    <connections>
+                                        <action selector="decimalPressed" destination="CuL-TH-bOu" id="NEa-Xk-mB0"/>
+                                    </connections>
+                                </button>
+                                <button width="0.33329999999999999" height="1" alignment="left" title="0" id="8MM-mt-jgd">
+                                    <color key="titleColor" red="0.99607843139999996" green="0.99607843139999996" blue="0.86666666670000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    <connections>
+                                        <action selector="zeroPressed" destination="CuL-TH-bOu" id="Vo5-Xi-k3P"/>
+                                    </connections>
+                                </button>
+                                <button width="0.33329999999999999" height="1" alignment="left" title="⌫" id="kOE-rK-cmZ">
+                                    <color key="titleColor" red="0.3411764706" green="0.42745098040000001" blue="0.2156862745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <connections>
+                                        <action selector="backspacePressed" destination="CuL-TH-bOu" id="9VT-DH-Ax7"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="numberLabel" destination="Sth-vR-sFd" id="fkX-dq-chS"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="744" y="322"/>
+        </scene>
+        <!--dayTitleView-->
+        <scene sceneID="0hg-ke-4pC">
+            <objects>
+                <controller identifier="inputTextView" title="Morse Input" id="Upn-Gt-tGN" userLabel="dayTitleView" customClass="MorseInputController">
+                    <items>
+                        <label width="1" alignment="left" textAlignment="left" numberOfLines="6" id="q05-Vc-cXQ">
+                            <color key="textColor" red="0.99607843139999996" green="0.99607843139999996" blue="0.86666666670000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="font" style="UICTFontTextStyleCaption2"/>
+                        </label>
+                        <label height="15" alignment="left" id="h2L-63-VpY">
+                            <color key="textColor" red="0.99607843139999996" green="0.99607843139999996" blue="0.86666666670000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="font" type="system" pointSize="12"/>
+                        </label>
+                        <group width="1" height="54" alignment="left" id="zTO-uh-juE">
+                            <items>
+                                <button width="0.5" height="1" alignment="left" title="-" id="SzI-pu-3nO">
+                                    <color key="titleColor" red="0.99607843139999996" green="0.99607843139999996" blue="0.86666666670000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="backgroundColor" red="0.3411764706" green="0.42745098040000001" blue="0.2156862745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="font" type="system" pointSize="70"/>
+                                    <connections>
+                                        <action selector="dashPressed" destination="Upn-Gt-tGN" id="BgB-9K-31b"/>
+                                    </connections>
+                                </button>
+                                <button width="0.5" height="1" alignment="right" title="•" id="ocC-o9-6U1">
+                                    <color key="titleColor" red="0.99607843139999996" green="0.99607843139999996" blue="0.86666666670000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="backgroundColor" red="0.3411764706" green="0.42745098040000001" blue="0.2156862745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="font" type="system" pointSize="50"/>
+                                    <connections>
+                                        <action selector="dotPressed" destination="Upn-Gt-tGN" id="T5I-Zm-LnX"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <button width="1" height="54" alignment="left" title="Space" id="bKV-r8-4v8">
+                            <color key="titleColor" red="0.99607843139999996" green="0.99607843139999996" blue="0.86666666670000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="backgroundColor" red="0.3411764706" green="0.42745098040000001" blue="0.2156862745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="spacePressed" destination="Upn-Gt-tGN" id="Tpv-hX-yO4"/>
+                            </connections>
+                        </button>
+                        <separator alignment="left" id="4hs-m9-GAM">
+                            <color key="color" red="0.99607843139999996" green="0.99607843139999996" blue="0.86666666670000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </separator>
+                        <button width="1" alignment="left" title="Choose/Dictate" id="C6M-v7-Gt8">
+                            <color key="titleColor" red="0.99607843139999996" green="0.99607843139999996" blue="0.86666666670000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="backgroundColor" red="0.3411764706" green="0.42745098040000001" blue="0.2156862745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="dictationInputButtonPressed" destination="Upn-Gt-tGN" id="K3r-04-aqm"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <menu key="menu" id="DyQ-wd-xDj">
+                        <items>
+                            <menuItem title="Clear" icon="trash" id="STJ-rh-lzL">
+                                <connections>
+                                    <action selector="clearDayTitleMenuItemSelected" destination="Upn-Gt-tGN" id="ww8-Ff-sbk"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Backspace" icon="repeat" id="NeG-1i-fSy">
+                                <connections>
+                                    <action selector="backspaceMenuItemSelected" destination="Upn-Gt-tGN" id="3GI-CJ-UrL"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <connections>
+                        <outlet property="codeInputIndicator" destination="h2L-63-VpY" id="jg7-Iz-F4g"/>
+                        <outlet property="dictationInputButton" destination="C6M-v7-Gt8" id="zii-eN-vlF"/>
+                        <outlet property="resultStringLbl" destination="q05-Vc-cXQ" id="QmT-nS-ZWD"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="744" y="622"/>
         </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">
@@ -32,7 +375,10 @@
                     <items>
                         <label alignment="left" text="Alert Label" id="XkS-y5-khE"/>
                     </items>
-                    <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf"/>
+                    <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf">
+                        <color key="titleColor" red="0.99607843139999996" green="0.99607843139999996" blue="0.86666666670000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="sashColor" red="0.3411764706" green="0.42745098040000001" blue="0.2156862745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </notificationCategory>
                     <connections>
                         <outlet property="notificationAlertLabel" destination="XkS-y5-khE" id="49B-RR-99y"/>
                         <segue destination="gdX-wl-uQE" kind="relationship" relationship="dynamicNotificationInterface" id="fKh-qV-3T2"/>
@@ -44,9 +390,12 @@
         <!--Notification Controller-->
         <scene sceneID="KIl-fV-djm">
             <objects>
-                <controller id="gdX-wl-uQE" customClass="NotificationController" customModuleProvider=""/>
+                <controller id="gdX-wl-uQE" customClass="NotificationController">
+                    <color key="backgroundColor" red="0.3411764706" green="0.42745098040000001" blue="0.2156862745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </controller>
             </objects>
             <point key="canvasLocation" x="553" y="1001"/>
         </scene>
     </scenes>
+    <color key="tintColor" red="0.99607843139999996" green="0.99607843139999996" blue="0.86666666670000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
 </document>

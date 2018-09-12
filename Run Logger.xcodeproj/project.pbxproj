@@ -1,0 +1,1231 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4908EBB51CE8DB4800943A55 /* NSString+HTML.m in Sources */ = {isa = PBXBuildFile; fileRef = 4908EBB21CE8DB4800943A55 /* NSString+HTML.m */; };
+		4908EBB61CE8DB4800943A55 /* NSString+XMLEntities.m in Sources */ = {isa = PBXBuildFile; fileRef = 4908EBB41CE8DB4800943A55 /* NSString+XMLEntities.m */; };
+		4908EBB91CE8DB9C00943A55 /* GTMNSString+HTML.m in Sources */ = {isa = PBXBuildFile; fileRef = 4908EBB81CE8DB9C00943A55 /* GTMNSString+HTML.m */; };
+		490B77131DA06A2000CA778C /* MultipleRunsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 490B77121DA06A2000CA778C /* MultipleRunsViewController.m */; };
+		490EB16B1D80EB0800FE20FB /* DonationHandlerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 490EB16A1D80EB0800FE20FB /* DonationHandlerViewController.m */; };
+		4915FA011D941370002C77DC /* TeamCalTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4915FA001D941370002C77DC /* TeamCalTableViewController.m */; };
+		491BF0C41D1DA330007656F5 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 491BF0C31D1DA330007656F5 /* CoreTelephony.framework */; };
+		491BF0C61D1DA33D007656F5 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 491BF0C51D1DA33D007656F5 /* SystemConfiguration.framework */; };
+		491BF0C81D1DA345007656F5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 491BF0C71D1DA345007656F5 /* CoreGraphics.framework */; };
+		491BF0CC1D1DA356007656F5 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 491BF0CB1D1DA356007656F5 /* AdSupport.framework */; };
+		491BF0CE1D1DA35F007656F5 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 491BF0CD1D1DA35F007656F5 /* QuartzCore.framework */; };
+		491BF0D01D1DA36D007656F5 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 491BF0CF1D1DA36D007656F5 /* CoreMedia.framework */; };
+		491BF0D21D1DA379007656F5 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 491BF0D11D1DA379007656F5 /* AVFoundation.framework */; };
+		491BF0D41D1DA38D007656F5 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 491BF0D31D1DA38D007656F5 /* libz.tbd */; };
+		491E64641D00984D0003E7B4 /* calendarIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 491E64621D00984D0003E7B4 /* calendarIcon.png */; };
+		491E64651D00984D0003E7B4 /* calendarIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 491E64631D00984D0003E7B4 /* calendarIcon@2x.png */; };
+		491E64681D009A9C0003E7B4 /* profileIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 491E64661D009A9C0003E7B4 /* profileIcon.png */; };
+		491E64691D009A9C0003E7B4 /* profileIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 491E64671D009A9C0003E7B4 /* profileIcon@2x.png */; };
+		491E646C1D009B570003E7B4 /* teamsIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 491E646A1D009B570003E7B4 /* teamsIcon.png */; };
+		491E646D1D009B570003E7B4 /* teamsIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 491E646B1D009B570003E7B4 /* teamsIcon@2x.png */; };
+		491FA2371D89B87D00743AF7 /* CreateAccountTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 491FA2361D89B87D00743AF7 /* CreateAccountTableViewController.m */; };
+		4928C8B21CE41E4A004F7830 /* EditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4928C8B11CE41E4A004F7830 /* EditViewController.m */; };
+		493DF5D41CF9D0A200D6FD03 /* LARInitialController.m in Sources */ = {isa = PBXBuildFile; fileRef = 493DF5D31CF9D0A200D6FD03 /* LARInitialController.m */; };
+		494EC34A1D1445D300F361AC /* GeneralInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 494EC3491D1445D300F361AC /* GeneralInfoViewController.m */; };
+		494EC34D1D14ACEE00F361AC /* ShoesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 494EC34C1D14ACEE00F361AC /* ShoesViewController.m */; };
+		49646F0A1CD95ED3001569E1 /* LARSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 49646F091CD95ED3001569E1 /* LARSession.m */; };
+		4968811B1CE4097000CAECF8 /* CalendarTab.m in Sources */ = {isa = PBXBuildFile; fileRef = 4968811A1CE4097000CAECF8 /* CalendarTab.m */; };
+		4970BB8E1CF663E800254D8B /* ShoeTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4970BB8D1CF663E800254D8B /* ShoeTableController.m */; };
+		4974C7F11CF5D5C600122FC6 /* EditView2Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = 4974C7F01CF5D5C600122FC6 /* EditView2Controller.m */; };
+		498661931CD1710700C213D4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 498661921CD1710700C213D4 /* main.m */; };
+		498661961CD1710700C213D4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 498661951CD1710700C213D4 /* AppDelegate.m */; };
+		498661991CD1710700C213D4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 498661981CD1710700C213D4 /* ViewController.m */; };
+		4986619C1CD1710700C213D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4986619A1CD1710700C213D4 /* Main.storyboard */; };
+		4986619E1CD1710700C213D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4986619D1CD1710700C213D4 /* Assets.xcassets */; };
+		498661A11CD1710700C213D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4986619F1CD1710700C213D4 /* LaunchScreen.storyboard */; };
+		498661AC1CD1710700C213D4 /* LogarunTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 498661AB1CD1710700C213D4 /* LogarunTests.m */; };
+		498661B71CD1710700C213D4 /* LogarunUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 498661B61CD1710700C213D4 /* LogarunUITests.m */; };
+		498661BC1CD1710700C213D4 /* Run Logger WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 498661BB1CD1710700C213D4 /* Run Logger WatchKit App.app */; };
+		498661C21CD1710700C213D4 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 498661C01CD1710700C213D4 /* Interface.storyboard */; };
+		498661C41CD1710700C213D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 498661C31CD1710700C213D4 /* Assets.xcassets */; };
+		498661CB1CD1710700C213D4 /* Run Logger WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 498661CA1CD1710700C213D4 /* Run Logger WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		498661D31CD1710700C213D4 /* InterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 498661D21CD1710700C213D4 /* InterfaceController.m */; };
+		498661D61CD1710700C213D4 /* ExtensionDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 498661D51CD1710700C213D4 /* ExtensionDelegate.m */; };
+		498661D91CD1710700C213D4 /* NotificationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 498661D81CD1710700C213D4 /* NotificationController.m */; };
+		498661E11CD1710700C213D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 498661E01CD1710700C213D4 /* Assets.xcassets */; };
+		498F82471D2D60390003764F /* SettingsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 498F82461D2D60390003764F /* SettingsTableViewController.m */; };
+		498F824A1D2D76960003764F /* PresetTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 498F82491D2D76960003764F /* PresetTableViewController.m */; };
+		499A40451D1237A600AB7FB8 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 499A40441D1237A600AB7FB8 /* HomeViewController.m */; };
+		499A40481D1303F500AB7FB8 /* NumberInputController.m in Sources */ = {isa = PBXBuildFile; fileRef = 499A40471D1303F500AB7FB8 /* NumberInputController.m */; };
+		499B31061CED159D00D06920 /* EditRunRootController.m in Sources */ = {isa = PBXBuildFile; fileRef = 499B31051CED159D00D06920 /* EditRunRootController.m */; };
+		499D49E11D1AD829002E71DD /* TeamMemberView.m in Sources */ = {isa = PBXBuildFile; fileRef = 499D49E01D1AD829002E71DD /* TeamMemberView.m */; };
+		49A431741CE556C90064C0D1 /* TabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49A431731CE556C90064C0D1 /* TabBarController.m */; };
+		49A431761CE5649D0064C0D1 /* LARRun.m in Sources */ = {isa = PBXBuildFile; fileRef = 49A431751CE5649D0064C0D1 /* LARRun.m */; };
+		49B3B8FE1DA1CF03008003F0 /* PreferencesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49B3B8FD1DA1CF03008003F0 /* PreferencesViewController.m */; };
+		49BE47211D7BAD1600FEA9A3 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49A06E671D305E3700F9A484 /* StoreKit.framework */; };
+		49BE47231D7CBDA100FEA9A3 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49BE47221D7CBDA100FEA9A3 /* HealthKit.framework */; };
+		49D2CF881CD2E63600DB2CB4 /* LARWatchSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 49D2CF861CD2E63600DB2CB4 /* LARWatchSession.m */; };
+		49D350B51CDC132700462E30 /* MorseInputController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49D350B41CDC132700462E30 /* MorseInputController.m */; };
+		49D854E01CE4B28500E3B00E /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49D854DF1CE4B28500E3B00E /* ProfileViewController.m */; };
+		49D9EFA01D16FC54009689A6 /* TeamTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49D9EF9F1D16FC54009689A6 /* TeamTableViewController.m */; };
+		49E12AF91CE0F07700FC2CA5 /* PDTSimpleCalendarViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 49E12AF01CE0F07700FC2CA5 /* PDTSimpleCalendarViewCell.m */; };
+		49E12AFA1CE0F07700FC2CA5 /* PDTSimpleCalendarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49E12AF21CE0F07700FC2CA5 /* PDTSimpleCalendarViewController.m */; };
+		49E12AFB1CE0F07700FC2CA5 /* PDTSimpleCalendarViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 49E12AF41CE0F07700FC2CA5 /* PDTSimpleCalendarViewFlowLayout.m */; };
+		49E12AFC1CE0F07700FC2CA5 /* PDTSimpleCalendarViewHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 49E12AF61CE0F07700FC2CA5 /* PDTSimpleCalendarViewHeader.m */; };
+		49E12AFD1CE0F07700FC2CA5 /* PDTSimpleCalendarViewWeekdayHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 49E12AF81CE0F07700FC2CA5 /* PDTSimpleCalendarViewWeekdayHeader.m */; };
+		49F70A431D99CC1B000436BC /* CommentTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49F70A421D99CC1B000436BC /* CommentTableViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		498661A81CD1710700C213D4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 498661861CD1710700C213D4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4986618D1CD1710700C213D4;
+			remoteInfo = Logarun;
+		};
+		498661B31CD1710700C213D4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 498661861CD1710700C213D4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4986618D1CD1710700C213D4;
+			remoteInfo = Logarun;
+		};
+		498661BD1CD1710700C213D4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 498661861CD1710700C213D4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 498661BA1CD1710700C213D4;
+			remoteInfo = "Logarun WatchKit App";
+		};
+		498661CC1CD1710700C213D4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 498661861CD1710700C213D4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 498661C91CD1710700C213D4;
+			remoteInfo = "Logarun WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		498661E81CD1710700C213D4 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				498661CB1CD1710700C213D4 /* Run Logger WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		498661EC1CD1710700C213D4 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				498661BC1CD1710700C213D4 /* Run Logger WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		4908EBB11CE8DB4800943A55 /* NSString+HTML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+HTML.h"; sourceTree = "<group>"; };
+		4908EBB21CE8DB4800943A55 /* NSString+HTML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+HTML.m"; sourceTree = "<group>"; };
+		4908EBB31CE8DB4800943A55 /* NSString+XMLEntities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+XMLEntities.h"; sourceTree = "<group>"; };
+		4908EBB41CE8DB4800943A55 /* NSString+XMLEntities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+XMLEntities.m"; sourceTree = "<group>"; };
+		4908EBB71CE8DB9C00943A55 /* GTMNSString+HTML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GTMNSString+HTML.h"; sourceTree = "<group>"; };
+		4908EBB81CE8DB9C00943A55 /* GTMNSString+HTML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GTMNSString+HTML.m"; sourceTree = "<group>"; };
+		490B77111DA06A2000CA778C /* MultipleRunsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultipleRunsViewController.h; sourceTree = "<group>"; };
+		490B77121DA06A2000CA778C /* MultipleRunsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MultipleRunsViewController.m; sourceTree = "<group>"; };
+		490EB1691D80EB0800FE20FB /* DonationHandlerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DonationHandlerViewController.h; sourceTree = "<group>"; };
+		490EB16A1D80EB0800FE20FB /* DonationHandlerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DonationHandlerViewController.m; sourceTree = "<group>"; };
+		4915F9FF1D941370002C77DC /* TeamCalTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TeamCalTableViewController.h; sourceTree = "<group>"; };
+		4915FA001D941370002C77DC /* TeamCalTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TeamCalTableViewController.m; sourceTree = "<group>"; };
+		491BF0C31D1DA330007656F5 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		491BF0C51D1DA33D007656F5 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		491BF0C71D1DA345007656F5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		491BF0CB1D1DA356007656F5 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		491BF0CD1D1DA35F007656F5 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		491BF0CF1D1DA36D007656F5 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		491BF0D11D1DA379007656F5 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		491BF0D31D1DA38D007656F5 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		491E64621D00984D0003E7B4 /* calendarIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = calendarIcon.png; sourceTree = "<group>"; };
+		491E64631D00984D0003E7B4 /* calendarIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "calendarIcon@2x.png"; sourceTree = "<group>"; };
+		491E64661D009A9C0003E7B4 /* profileIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = profileIcon.png; sourceTree = "<group>"; };
+		491E64671D009A9C0003E7B4 /* profileIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "profileIcon@2x.png"; sourceTree = "<group>"; };
+		491E646A1D009B570003E7B4 /* teamsIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = teamsIcon.png; sourceTree = "<group>"; };
+		491E646B1D009B570003E7B4 /* teamsIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "teamsIcon@2x.png"; sourceTree = "<group>"; };
+		491FA2351D89B87D00743AF7 /* CreateAccountTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreateAccountTableViewController.h; sourceTree = "<group>"; };
+		491FA2361D89B87D00743AF7 /* CreateAccountTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreateAccountTableViewController.m; sourceTree = "<group>"; };
+		4928C8B01CE41E37004F7830 /* EditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditViewController.h; sourceTree = "<group>"; };
+		4928C8B11CE41E4A004F7830 /* EditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditViewController.m; sourceTree = "<group>"; };
+		493DF5D21CF9D09800D6FD03 /* LARInitialController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LARInitialController.h; sourceTree = "<group>"; };
+		493DF5D31CF9D0A200D6FD03 /* LARInitialController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LARInitialController.m; sourceTree = "<group>"; };
+		494EC3481D1445D300F361AC /* GeneralInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeneralInfoViewController.h; sourceTree = "<group>"; };
+		494EC3491D1445D300F361AC /* GeneralInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeneralInfoViewController.m; sourceTree = "<group>"; };
+		494EC34B1D14ACEE00F361AC /* ShoesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShoesViewController.h; sourceTree = "<group>"; };
+		494EC34C1D14ACEE00F361AC /* ShoesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShoesViewController.m; sourceTree = "<group>"; };
+		49646F081CD95ED3001569E1 /* LARSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LARSession.h; sourceTree = "<group>"; };
+		49646F091CD95ED3001569E1 /* LARSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LARSession.m; sourceTree = "<group>"; };
+		496881191CE4097000CAECF8 /* CalendarTab.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalendarTab.h; sourceTree = "<group>"; };
+		4968811A1CE4097000CAECF8 /* CalendarTab.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalendarTab.m; sourceTree = "<group>"; };
+		4970BB8B1CF5F9F700254D8B /* EditViewProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditViewProtocol.h; sourceTree = "<group>"; };
+		4970BB8C1CF663DD00254D8B /* ShoeTableController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShoeTableController.h; sourceTree = "<group>"; };
+		4970BB8D1CF663E800254D8B /* ShoeTableController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShoeTableController.m; sourceTree = "<group>"; };
+		4974C7EF1CF5D58C00122FC6 /* EditView2Controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditView2Controller.h; sourceTree = "<group>"; };
+		4974C7F01CF5D5C600122FC6 /* EditView2Controller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditView2Controller.m; sourceTree = "<group>"; };
+		4986618E1CD1710700C213D4 /* Run Logger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Run Logger.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		498661921CD1710700C213D4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		498661941CD1710700C213D4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		498661951CD1710700C213D4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		498661971CD1710700C213D4 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		498661981CD1710700C213D4 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		4986619B1CD1710700C213D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4986619D1CD1710700C213D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		498661A01CD1710700C213D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		498661A21CD1710700C213D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		498661A71CD1710700C213D4 /* Run LoggerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Run LoggerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		498661AB1CD1710700C213D4 /* LogarunTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LogarunTests.m; sourceTree = "<group>"; };
+		498661AD1CD1710700C213D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		498661B21CD1710700C213D4 /* Run LoggerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Run LoggerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		498661B61CD1710700C213D4 /* LogarunUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LogarunUITests.m; sourceTree = "<group>"; };
+		498661B81CD1710700C213D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		498661BB1CD1710700C213D4 /* Run Logger WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Run Logger WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		498661C11CD1710700C213D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		498661C31CD1710700C213D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		498661C51CD1710700C213D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		498661CA1CD1710700C213D4 /* Run Logger WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Run Logger WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		498661D01CD1710700C213D4 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		498661D11CD1710700C213D4 /* InterfaceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterfaceController.h; sourceTree = "<group>"; };
+		498661D21CD1710700C213D4 /* InterfaceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InterfaceController.m; sourceTree = "<group>"; };
+		498661D41CD1710700C213D4 /* ExtensionDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExtensionDelegate.h; sourceTree = "<group>"; };
+		498661D51CD1710700C213D4 /* ExtensionDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExtensionDelegate.m; sourceTree = "<group>"; };
+		498661D71CD1710700C213D4 /* NotificationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationController.h; sourceTree = "<group>"; };
+		498661D81CD1710700C213D4 /* NotificationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotificationController.m; sourceTree = "<group>"; };
+		498661E01CD1710700C213D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		498661E21CD1710700C213D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		498F249E1CFC98A00056F060 /* Logarun.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Logarun.entitlements; sourceTree = "<group>"; };
+		498F82451D2D60390003764F /* SettingsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsTableViewController.h; sourceTree = "<group>"; };
+		498F82461D2D60390003764F /* SettingsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsTableViewController.m; sourceTree = "<group>"; };
+		498F82481D2D76960003764F /* PresetTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PresetTableViewController.h; sourceTree = "<group>"; };
+		498F82491D2D76960003764F /* PresetTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PresetTableViewController.m; sourceTree = "<group>"; };
+		499A40431D1237A600AB7FB8 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		499A40441D1237A600AB7FB8 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		499A40461D1303F500AB7FB8 /* NumberInputController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NumberInputController.h; sourceTree = "<group>"; };
+		499A40471D1303F500AB7FB8 /* NumberInputController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NumberInputController.m; sourceTree = "<group>"; };
+		499B31041CED158600D06920 /* EditRunRootController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditRunRootController.h; sourceTree = "<group>"; };
+		499B31051CED159D00D06920 /* EditRunRootController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditRunRootController.m; sourceTree = "<group>"; };
+		499D49DF1D1AD829002E71DD /* TeamMemberView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TeamMemberView.h; sourceTree = "<group>"; };
+		499D49E01D1AD829002E71DD /* TeamMemberView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TeamMemberView.m; sourceTree = "<group>"; };
+		49A06E671D305E3700F9A484 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		49A4316E1CE4EA590064C0D1 /* LARSessionDelegateProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LARSessionDelegateProtocol.h; sourceTree = "<group>"; };
+		49A4316F1CE4EB040064C0D1 /* LARRun.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LARRun.h; sourceTree = "<group>"; };
+		49A431721CE5561B0064C0D1 /* TabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarController.h; sourceTree = "<group>"; };
+		49A431731CE556C90064C0D1 /* TabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarController.m; sourceTree = "<group>"; };
+		49A431751CE5649D0064C0D1 /* LARRun.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LARRun.m; sourceTree = "<group>"; };
+		49B3B8FC1DA1CF03008003F0 /* PreferencesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreferencesViewController.h; sourceTree = "<group>"; };
+		49B3B8FD1DA1CF03008003F0 /* PreferencesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreferencesViewController.m; sourceTree = "<group>"; };
+		49BE47221D7CBDA100FEA9A3 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		49D2CF851CD2E46E00DB2CB4 /* LARWatchSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LARWatchSession.h; sourceTree = "<group>"; };
+		49D2CF861CD2E63600DB2CB4 /* LARWatchSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LARWatchSession.m; sourceTree = "<group>"; };
+		49D350B31CDC12A000462E30 /* MorseInputController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MorseInputController.h; sourceTree = "<group>"; };
+		49D350B41CDC132700462E30 /* MorseInputController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MorseInputController.m; sourceTree = "<group>"; };
+		49D350B81CDC209500462E30 /* Logarun WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Logarun WatchKit Extension.entitlements"; sourceTree = "<group>"; };
+		49D854DE1CE4B27400E3B00E /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
+		49D854DF1CE4B28500E3B00E /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
+		49D9EF9E1D16FC54009689A6 /* TeamTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TeamTableViewController.h; sourceTree = "<group>"; };
+		49D9EF9F1D16FC54009689A6 /* TeamTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TeamTableViewController.m; sourceTree = "<group>"; };
+		49E12AEE1CE0F07700FC2CA5 /* PDTSimpleCalendar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PDTSimpleCalendar.h; path = PDTSimpleCalendar/PDTSimpleCalendar.h; sourceTree = "<group>"; };
+		49E12AEF1CE0F07700FC2CA5 /* PDTSimpleCalendarViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PDTSimpleCalendarViewCell.h; path = PDTSimpleCalendar/PDTSimpleCalendarViewCell.h; sourceTree = "<group>"; };
+		49E12AF01CE0F07700FC2CA5 /* PDTSimpleCalendarViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PDTSimpleCalendarViewCell.m; path = PDTSimpleCalendar/PDTSimpleCalendarViewCell.m; sourceTree = "<group>"; };
+		49E12AF11CE0F07700FC2CA5 /* PDTSimpleCalendarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PDTSimpleCalendarViewController.h; path = PDTSimpleCalendar/PDTSimpleCalendarViewController.h; sourceTree = "<group>"; };
+		49E12AF21CE0F07700FC2CA5 /* PDTSimpleCalendarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PDTSimpleCalendarViewController.m; path = PDTSimpleCalendar/PDTSimpleCalendarViewController.m; sourceTree = "<group>"; };
+		49E12AF31CE0F07700FC2CA5 /* PDTSimpleCalendarViewFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PDTSimpleCalendarViewFlowLayout.h; path = PDTSimpleCalendar/PDTSimpleCalendarViewFlowLayout.h; sourceTree = "<group>"; };
+		49E12AF41CE0F07700FC2CA5 /* PDTSimpleCalendarViewFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PDTSimpleCalendarViewFlowLayout.m; path = PDTSimpleCalendar/PDTSimpleCalendarViewFlowLayout.m; sourceTree = "<group>"; };
+		49E12AF51CE0F07700FC2CA5 /* PDTSimpleCalendarViewHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PDTSimpleCalendarViewHeader.h; path = PDTSimpleCalendar/PDTSimpleCalendarViewHeader.h; sourceTree = "<group>"; };
+		49E12AF61CE0F07700FC2CA5 /* PDTSimpleCalendarViewHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PDTSimpleCalendarViewHeader.m; path = PDTSimpleCalendar/PDTSimpleCalendarViewHeader.m; sourceTree = "<group>"; };
+		49E12AF71CE0F07700FC2CA5 /* PDTSimpleCalendarViewWeekdayHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PDTSimpleCalendarViewWeekdayHeader.h; path = PDTSimpleCalendar/PDTSimpleCalendarViewWeekdayHeader.h; sourceTree = "<group>"; };
+		49E12AF81CE0F07700FC2CA5 /* PDTSimpleCalendarViewWeekdayHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PDTSimpleCalendarViewWeekdayHeader.m; path = PDTSimpleCalendar/PDTSimpleCalendarViewWeekdayHeader.m; sourceTree = "<group>"; };
+		49F70A411D99CC1B000436BC /* CommentTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommentTableViewController.h; sourceTree = "<group>"; };
+		49F70A421D99CC1B000436BC /* CommentTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommentTableViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4986618B1CD1710700C213D4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49BE47211D7BAD1600FEA9A3 /* StoreKit.framework in Frameworks */,
+				49BE47231D7CBDA100FEA9A3 /* HealthKit.framework in Frameworks */,
+				491BF0D41D1DA38D007656F5 /* libz.tbd in Frameworks */,
+				491BF0D21D1DA379007656F5 /* AVFoundation.framework in Frameworks */,
+				491BF0D01D1DA36D007656F5 /* CoreMedia.framework in Frameworks */,
+				491BF0CE1D1DA35F007656F5 /* QuartzCore.framework in Frameworks */,
+				491BF0CC1D1DA356007656F5 /* AdSupport.framework in Frameworks */,
+				491BF0C81D1DA345007656F5 /* CoreGraphics.framework in Frameworks */,
+				491BF0C61D1DA33D007656F5 /* SystemConfiguration.framework in Frameworks */,
+				491BF0C41D1DA330007656F5 /* CoreTelephony.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		498661A41CD1710700C213D4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		498661AF1CD1710700C213D4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		498661C71CD1710700C213D4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4908EBBA1CEA336600943A55 /* Calendar Tab */ = {
+			isa = PBXGroup;
+			children = (
+				496881191CE4097000CAECF8 /* CalendarTab.h */,
+				4968811A1CE4097000CAECF8 /* CalendarTab.m */,
+				4928C8B01CE41E37004F7830 /* EditViewController.h */,
+				4928C8B11CE41E4A004F7830 /* EditViewController.m */,
+				499B31041CED158600D06920 /* EditRunRootController.h */,
+				499B31051CED159D00D06920 /* EditRunRootController.m */,
+				4974C7EF1CF5D58C00122FC6 /* EditView2Controller.h */,
+				4974C7F01CF5D5C600122FC6 /* EditView2Controller.m */,
+				4970BB8B1CF5F9F700254D8B /* EditViewProtocol.h */,
+				4970BB8C1CF663DD00254D8B /* ShoeTableController.h */,
+				4970BB8D1CF663E800254D8B /* ShoeTableController.m */,
+				490B77111DA06A2000CA778C /* MultipleRunsViewController.h */,
+				490B77121DA06A2000CA778C /* MultipleRunsViewController.m */,
+			);
+			name = "Calendar Tab";
+			sourceTree = "<group>";
+		};
+		491E64611D0098070003E7B4 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				491E646A1D009B570003E7B4 /* teamsIcon.png */,
+				491E646B1D009B570003E7B4 /* teamsIcon@2x.png */,
+				491E64661D009A9C0003E7B4 /* profileIcon.png */,
+				491E64671D009A9C0003E7B4 /* profileIcon@2x.png */,
+				491E64621D00984D0003E7B4 /* calendarIcon.png */,
+				491E64631D00984D0003E7B4 /* calendarIcon@2x.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		4970BB8F1CF6753300254D8B /* Calendar Stuff */ = {
+			isa = PBXGroup;
+			children = (
+				49E12AEE1CE0F07700FC2CA5 /* PDTSimpleCalendar.h */,
+				49E12AEF1CE0F07700FC2CA5 /* PDTSimpleCalendarViewCell.h */,
+				49E12AF01CE0F07700FC2CA5 /* PDTSimpleCalendarViewCell.m */,
+				49E12AF11CE0F07700FC2CA5 /* PDTSimpleCalendarViewController.h */,
+				49E12AF21CE0F07700FC2CA5 /* PDTSimpleCalendarViewController.m */,
+				49E12AF31CE0F07700FC2CA5 /* PDTSimpleCalendarViewFlowLayout.h */,
+				49E12AF41CE0F07700FC2CA5 /* PDTSimpleCalendarViewFlowLayout.m */,
+				49E12AF51CE0F07700FC2CA5 /* PDTSimpleCalendarViewHeader.h */,
+				49E12AF61CE0F07700FC2CA5 /* PDTSimpleCalendarViewHeader.m */,
+				49E12AF71CE0F07700FC2CA5 /* PDTSimpleCalendarViewWeekdayHeader.h */,
+				49E12AF81CE0F07700FC2CA5 /* PDTSimpleCalendarViewWeekdayHeader.m */,
+			);
+			name = "Calendar Stuff";
+			sourceTree = "<group>";
+		};
+		4974C7EE1CF5421C00122FC6 /* URL String Parsing Stuff */ = {
+			isa = PBXGroup;
+			children = (
+				4908EBB71CE8DB9C00943A55 /* GTMNSString+HTML.h */,
+				4908EBB81CE8DB9C00943A55 /* GTMNSString+HTML.m */,
+				4908EBB11CE8DB4800943A55 /* NSString+HTML.h */,
+				4908EBB21CE8DB4800943A55 /* NSString+HTML.m */,
+				4908EBB31CE8DB4800943A55 /* NSString+XMLEntities.h */,
+				4908EBB41CE8DB4800943A55 /* NSString+XMLEntities.m */,
+			);
+			name = "URL String Parsing Stuff";
+			sourceTree = "<group>";
+		};
+		498661851CD1710700C213D4 = {
+			isa = PBXGroup;
+			children = (
+				498661901CD1710700C213D4 /* Logarun */,
+				498661AA1CD1710700C213D4 /* LogarunTests */,
+				498661B51CD1710700C213D4 /* LogarunUITests */,
+				498661BF1CD1710700C213D4 /* Logarun WatchKit App */,
+				498661CE1CD1710700C213D4 /* Logarun WatchKit Extension */,
+				4986618F1CD1710700C213D4 /* Products */,
+				49A7956C1D1354BC00097A6A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4986618F1CD1710700C213D4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4986618E1CD1710700C213D4 /* Run Logger.app */,
+				498661A71CD1710700C213D4 /* Run LoggerTests.xctest */,
+				498661B21CD1710700C213D4 /* Run LoggerUITests.xctest */,
+				498661BB1CD1710700C213D4 /* Run Logger WatchKit App.app */,
+				498661CA1CD1710700C213D4 /* Run Logger WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		498661901CD1710700C213D4 /* Logarun */ = {
+			isa = PBXGroup;
+			children = (
+				491E64611D0098070003E7B4 /* Images */,
+				498F249E1CFC98A00056F060 /* Logarun.entitlements */,
+				4970BB8F1CF6753300254D8B /* Calendar Stuff */,
+				4974C7EE1CF5421C00122FC6 /* URL String Parsing Stuff */,
+				4908EBBA1CEA336600943A55 /* Calendar Tab */,
+				49D499531D65DDBA00772517 /* Profile Tab */,
+				49D499541D65DDED00772517 /* Team Tab */,
+				49A4316F1CE4EB040064C0D1 /* LARRun.h */,
+				49A431751CE5649D0064C0D1 /* LARRun.m */,
+				49A4316E1CE4EA590064C0D1 /* LARSessionDelegateProtocol.h */,
+				49646F081CD95ED3001569E1 /* LARSession.h */,
+				49646F091CD95ED3001569E1 /* LARSession.m */,
+				49A431721CE5561B0064C0D1 /* TabBarController.h */,
+				49A431731CE556C90064C0D1 /* TabBarController.m */,
+				498661941CD1710700C213D4 /* AppDelegate.h */,
+				498661951CD1710700C213D4 /* AppDelegate.m */,
+				493DF5D21CF9D09800D6FD03 /* LARInitialController.h */,
+				493DF5D31CF9D0A200D6FD03 /* LARInitialController.m */,
+				498661971CD1710700C213D4 /* ViewController.h */,
+				498661981CD1710700C213D4 /* ViewController.m */,
+				491FA2351D89B87D00743AF7 /* CreateAccountTableViewController.h */,
+				491FA2361D89B87D00743AF7 /* CreateAccountTableViewController.m */,
+				490EB1691D80EB0800FE20FB /* DonationHandlerViewController.h */,
+				490EB16A1D80EB0800FE20FB /* DonationHandlerViewController.m */,
+				4986619A1CD1710700C213D4 /* Main.storyboard */,
+				4986619D1CD1710700C213D4 /* Assets.xcassets */,
+				4986619F1CD1710700C213D4 /* LaunchScreen.storyboard */,
+				498661A21CD1710700C213D4 /* Info.plist */,
+				498661911CD1710700C213D4 /* Supporting Files */,
+			);
+			path = Logarun;
+			sourceTree = "<group>";
+		};
+		498661911CD1710700C213D4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				498661921CD1710700C213D4 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		498661AA1CD1710700C213D4 /* LogarunTests */ = {
+			isa = PBXGroup;
+			children = (
+				498661AB1CD1710700C213D4 /* LogarunTests.m */,
+				498661AD1CD1710700C213D4 /* Info.plist */,
+			);
+			path = LogarunTests;
+			sourceTree = "<group>";
+		};
+		498661B51CD1710700C213D4 /* LogarunUITests */ = {
+			isa = PBXGroup;
+			children = (
+				498661B61CD1710700C213D4 /* LogarunUITests.m */,
+				498661B81CD1710700C213D4 /* Info.plist */,
+			);
+			path = LogarunUITests;
+			sourceTree = "<group>";
+		};
+		498661BF1CD1710700C213D4 /* Logarun WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				498661C01CD1710700C213D4 /* Interface.storyboard */,
+				499A40461D1303F500AB7FB8 /* NumberInputController.h */,
+				499A40471D1303F500AB7FB8 /* NumberInputController.m */,
+				498661C31CD1710700C213D4 /* Assets.xcassets */,
+				498661C51CD1710700C213D4 /* Info.plist */,
+			);
+			path = "Logarun WatchKit App";
+			sourceTree = "<group>";
+		};
+		498661CE1CD1710700C213D4 /* Logarun WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				49D350B81CDC209500462E30 /* Logarun WatchKit Extension.entitlements */,
+				49D350B31CDC12A000462E30 /* MorseInputController.h */,
+				49D350B41CDC132700462E30 /* MorseInputController.m */,
+				499A40431D1237A600AB7FB8 /* HomeViewController.h */,
+				499A40441D1237A600AB7FB8 /* HomeViewController.m */,
+				498661D11CD1710700C213D4 /* InterfaceController.h */,
+				498661D21CD1710700C213D4 /* InterfaceController.m */,
+				498661D41CD1710700C213D4 /* ExtensionDelegate.h */,
+				498661D51CD1710700C213D4 /* ExtensionDelegate.m */,
+				498661D71CD1710700C213D4 /* NotificationController.h */,
+				498661D81CD1710700C213D4 /* NotificationController.m */,
+				49D2CF851CD2E46E00DB2CB4 /* LARWatchSession.h */,
+				49D2CF861CD2E63600DB2CB4 /* LARWatchSession.m */,
+				498661E01CD1710700C213D4 /* Assets.xcassets */,
+				498661E21CD1710700C213D4 /* Info.plist */,
+				498661CF1CD1710700C213D4 /* Supporting Files */,
+			);
+			path = "Logarun WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		498661CF1CD1710700C213D4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				498661D01CD1710700C213D4 /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		49A7956C1D1354BC00097A6A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				49BE47221D7CBDA100FEA9A3 /* HealthKit.framework */,
+				49A06E671D305E3700F9A484 /* StoreKit.framework */,
+				491BF0D31D1DA38D007656F5 /* libz.tbd */,
+				491BF0D11D1DA379007656F5 /* AVFoundation.framework */,
+				491BF0CF1D1DA36D007656F5 /* CoreMedia.framework */,
+				491BF0CD1D1DA35F007656F5 /* QuartzCore.framework */,
+				491BF0CB1D1DA356007656F5 /* AdSupport.framework */,
+				491BF0C71D1DA345007656F5 /* CoreGraphics.framework */,
+				491BF0C51D1DA33D007656F5 /* SystemConfiguration.framework */,
+				491BF0C31D1DA330007656F5 /* CoreTelephony.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		49D499531D65DDBA00772517 /* Profile Tab */ = {
+			isa = PBXGroup;
+			children = (
+				49D854DE1CE4B27400E3B00E /* ProfileViewController.h */,
+				49D854DF1CE4B28500E3B00E /* ProfileViewController.m */,
+				498F82451D2D60390003764F /* SettingsTableViewController.h */,
+				498F82461D2D60390003764F /* SettingsTableViewController.m */,
+				498F82481D2D76960003764F /* PresetTableViewController.h */,
+				498F82491D2D76960003764F /* PresetTableViewController.m */,
+				494EC3481D1445D300F361AC /* GeneralInfoViewController.h */,
+				494EC3491D1445D300F361AC /* GeneralInfoViewController.m */,
+				494EC34B1D14ACEE00F361AC /* ShoesViewController.h */,
+				494EC34C1D14ACEE00F361AC /* ShoesViewController.m */,
+				49B3B8FC1DA1CF03008003F0 /* PreferencesViewController.h */,
+				49B3B8FD1DA1CF03008003F0 /* PreferencesViewController.m */,
+			);
+			name = "Profile Tab";
+			sourceTree = "<group>";
+		};
+		49D499541D65DDED00772517 /* Team Tab */ = {
+			isa = PBXGroup;
+			children = (
+				49D9EF9E1D16FC54009689A6 /* TeamTableViewController.h */,
+				49D9EF9F1D16FC54009689A6 /* TeamTableViewController.m */,
+				499D49DF1D1AD829002E71DD /* TeamMemberView.h */,
+				499D49E01D1AD829002E71DD /* TeamMemberView.m */,
+				4915F9FF1D941370002C77DC /* TeamCalTableViewController.h */,
+				4915FA001D941370002C77DC /* TeamCalTableViewController.m */,
+				49F70A411D99CC1B000436BC /* CommentTableViewController.h */,
+				49F70A421D99CC1B000436BC /* CommentTableViewController.m */,
+			);
+			name = "Team Tab";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4986618D1CD1710700C213D4 /* Run Logger */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 498661ED1CD1710700C213D4 /* Build configuration list for PBXNativeTarget "Run Logger" */;
+			buildPhases = (
+				4986618A1CD1710700C213D4 /* Sources */,
+				4986618B1CD1710700C213D4 /* Frameworks */,
+				4986618C1CD1710700C213D4 /* Resources */,
+				498661EC1CD1710700C213D4 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				498661BE1CD1710700C213D4 /* PBXTargetDependency */,
+			);
+			name = "Run Logger";
+			productName = Logarun;
+			productReference = 4986618E1CD1710700C213D4 /* Run Logger.app */;
+			productType = "com.apple.product-type.application";
+		};
+		498661A61CD1710700C213D4 /* Run LoggerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 498661F01CD1710700C213D4 /* Build configuration list for PBXNativeTarget "Run LoggerTests" */;
+			buildPhases = (
+				498661A31CD1710700C213D4 /* Sources */,
+				498661A41CD1710700C213D4 /* Frameworks */,
+				498661A51CD1710700C213D4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				498661A91CD1710700C213D4 /* PBXTargetDependency */,
+			);
+			name = "Run LoggerTests";
+			productName = LogarunTests;
+			productReference = 498661A71CD1710700C213D4 /* Run LoggerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		498661B11CD1710700C213D4 /* Run LoggerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 498661F31CD1710700C213D4 /* Build configuration list for PBXNativeTarget "Run LoggerUITests" */;
+			buildPhases = (
+				498661AE1CD1710700C213D4 /* Sources */,
+				498661AF1CD1710700C213D4 /* Frameworks */,
+				498661B01CD1710700C213D4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				498661B41CD1710700C213D4 /* PBXTargetDependency */,
+			);
+			name = "Run LoggerUITests";
+			productName = LogarunUITests;
+			productReference = 498661B21CD1710700C213D4 /* Run LoggerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		498661BA1CD1710700C213D4 /* Run Logger WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 498661E91CD1710700C213D4 /* Build configuration list for PBXNativeTarget "Run Logger WatchKit App" */;
+			buildPhases = (
+				498661B91CD1710700C213D4 /* Resources */,
+				498661E81CD1710700C213D4 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				498661CD1CD1710700C213D4 /* PBXTargetDependency */,
+			);
+			name = "Run Logger WatchKit App";
+			productName = "Logarun WatchKit App";
+			productReference = 498661BB1CD1710700C213D4 /* Run Logger WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		498661C91CD1710700C213D4 /* Run Logger WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 498661E51CD1710700C213D4 /* Build configuration list for PBXNativeTarget "Run Logger WatchKit Extension" */;
+			buildPhases = (
+				498661C61CD1710700C213D4 /* Sources */,
+				498661C71CD1710700C213D4 /* Frameworks */,
+				498661C81CD1710700C213D4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Run Logger WatchKit Extension";
+			productName = "Logarun WatchKit Extension";
+			productReference = 498661CA1CD1710700C213D4 /* Run Logger WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		498661861CD1710700C213D4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = "Andrew Burford";
+				TargetAttributes = {
+					4986618D1CD1710700C213D4 = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = QN7G2R8TK6;
+						DevelopmentTeamName = "Andrew Burford";
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.HealthKit = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
+					};
+					498661A61CD1710700C213D4 = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 65W92TM4QJ;
+						TestTargetID = 4986618D1CD1710700C213D4;
+					};
+					498661B11CD1710700C213D4 = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 65W92TM4QJ;
+						TestTargetID = 4986618D1CD1710700C213D4;
+					};
+					498661BA1CD1710700C213D4 = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = QN7G2R8TK6;
+						DevelopmentTeamName = "Andrew Burford";
+						ProvisioningStyle = Automatic;
+					};
+					498661C91CD1710700C213D4 = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = QN7G2R8TK6;
+						DevelopmentTeamName = "Andrew Burford";
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.HealthKit = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 0;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 498661891CD1710700C213D4 /* Build configuration list for PBXProject "Run Logger" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 498661851CD1710700C213D4;
+			productRefGroup = 4986618F1CD1710700C213D4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4986618D1CD1710700C213D4 /* Run Logger */,
+				498661A61CD1710700C213D4 /* Run LoggerTests */,
+				498661B11CD1710700C213D4 /* Run LoggerUITests */,
+				498661BA1CD1710700C213D4 /* Run Logger WatchKit App */,
+				498661C91CD1710700C213D4 /* Run Logger WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4986618C1CD1710700C213D4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				491E646D1D009B570003E7B4 /* teamsIcon@2x.png in Resources */,
+				498661A11CD1710700C213D4 /* LaunchScreen.storyboard in Resources */,
+				491E64691D009A9C0003E7B4 /* profileIcon@2x.png in Resources */,
+				491E64641D00984D0003E7B4 /* calendarIcon.png in Resources */,
+				491E646C1D009B570003E7B4 /* teamsIcon.png in Resources */,
+				4986619E1CD1710700C213D4 /* Assets.xcassets in Resources */,
+				491E64681D009A9C0003E7B4 /* profileIcon.png in Resources */,
+				4986619C1CD1710700C213D4 /* Main.storyboard in Resources */,
+				491E64651D00984D0003E7B4 /* calendarIcon@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		498661A51CD1710700C213D4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		498661B01CD1710700C213D4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		498661B91CD1710700C213D4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				498661C41CD1710700C213D4 /* Assets.xcassets in Resources */,
+				498661C21CD1710700C213D4 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		498661C81CD1710700C213D4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				498661E11CD1710700C213D4 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4986618A1CD1710700C213D4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49B3B8FE1DA1CF03008003F0 /* PreferencesViewController.m in Sources */,
+				498F82471D2D60390003764F /* SettingsTableViewController.m in Sources */,
+				494EC34A1D1445D300F361AC /* GeneralInfoViewController.m in Sources */,
+				49F70A431D99CC1B000436BC /* CommentTableViewController.m in Sources */,
+				49E12AFC1CE0F07700FC2CA5 /* PDTSimpleCalendarViewHeader.m in Sources */,
+				498F824A1D2D76960003764F /* PresetTableViewController.m in Sources */,
+				499D49E11D1AD829002E71DD /* TeamMemberView.m in Sources */,
+				49E12AFD1CE0F07700FC2CA5 /* PDTSimpleCalendarViewWeekdayHeader.m in Sources */,
+				49A431741CE556C90064C0D1 /* TabBarController.m in Sources */,
+				498661991CD1710700C213D4 /* ViewController.m in Sources */,
+				498661961CD1710700C213D4 /* AppDelegate.m in Sources */,
+				490B77131DA06A2000CA778C /* MultipleRunsViewController.m in Sources */,
+				49A431761CE5649D0064C0D1 /* LARRun.m in Sources */,
+				49646F0A1CD95ED3001569E1 /* LARSession.m in Sources */,
+				491FA2371D89B87D00743AF7 /* CreateAccountTableViewController.m in Sources */,
+				4908EBB91CE8DB9C00943A55 /* GTMNSString+HTML.m in Sources */,
+				4908EBB51CE8DB4800943A55 /* NSString+HTML.m in Sources */,
+				49E12AFB1CE0F07700FC2CA5 /* PDTSimpleCalendarViewFlowLayout.m in Sources */,
+				498661931CD1710700C213D4 /* main.m in Sources */,
+				4908EBB61CE8DB4800943A55 /* NSString+XMLEntities.m in Sources */,
+				494EC34D1D14ACEE00F361AC /* ShoesViewController.m in Sources */,
+				49E12AFA1CE0F07700FC2CA5 /* PDTSimpleCalendarViewController.m in Sources */,
+				490EB16B1D80EB0800FE20FB /* DonationHandlerViewController.m in Sources */,
+				4928C8B21CE41E4A004F7830 /* EditViewController.m in Sources */,
+				4915FA011D941370002C77DC /* TeamCalTableViewController.m in Sources */,
+				49E12AF91CE0F07700FC2CA5 /* PDTSimpleCalendarViewCell.m in Sources */,
+				49D9EFA01D16FC54009689A6 /* TeamTableViewController.m in Sources */,
+				499B31061CED159D00D06920 /* EditRunRootController.m in Sources */,
+				4974C7F11CF5D5C600122FC6 /* EditView2Controller.m in Sources */,
+				493DF5D41CF9D0A200D6FD03 /* LARInitialController.m in Sources */,
+				49D854E01CE4B28500E3B00E /* ProfileViewController.m in Sources */,
+				4968811B1CE4097000CAECF8 /* CalendarTab.m in Sources */,
+				4970BB8E1CF663E800254D8B /* ShoeTableController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		498661A31CD1710700C213D4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				498661AC1CD1710700C213D4 /* LogarunTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		498661AE1CD1710700C213D4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				498661B71CD1710700C213D4 /* LogarunUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		498661C61CD1710700C213D4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				498661D61CD1710700C213D4 /* ExtensionDelegate.m in Sources */,
+				498661D31CD1710700C213D4 /* InterfaceController.m in Sources */,
+				499A40481D1303F500AB7FB8 /* NumberInputController.m in Sources */,
+				49D2CF881CD2E63600DB2CB4 /* LARWatchSession.m in Sources */,
+				498661D91CD1710700C213D4 /* NotificationController.m in Sources */,
+				49D350B51CDC132700462E30 /* MorseInputController.m in Sources */,
+				499A40451D1237A600AB7FB8 /* HomeViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		498661A91CD1710700C213D4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4986618D1CD1710700C213D4 /* Run Logger */;
+			targetProxy = 498661A81CD1710700C213D4 /* PBXContainerItemProxy */;
+		};
+		498661B41CD1710700C213D4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4986618D1CD1710700C213D4 /* Run Logger */;
+			targetProxy = 498661B31CD1710700C213D4 /* PBXContainerItemProxy */;
+		};
+		498661BE1CD1710700C213D4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 498661BA1CD1710700C213D4 /* Run Logger WatchKit App */;
+			targetProxy = 498661BD1CD1710700C213D4 /* PBXContainerItemProxy */;
+		};
+		498661CD1CD1710700C213D4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 498661C91CD1710700C213D4 /* Run Logger WatchKit Extension */;
+			targetProxy = 498661CC1CD1710700C213D4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4986619A1CD1710700C213D4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4986619B1CD1710700C213D4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4986619F1CD1710700C213D4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				498661A01CD1710700C213D4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		498661C01CD1710700C213D4 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				498661C11CD1710700C213D4 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		498661E31CD1710700C213D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		498661E41CD1710700C213D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		498661E61CD1710700C213D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "Logarun WatchKit Extension/Logarun WatchKit Extension.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = QN7G2R8TK6;
+				ENABLE_BITCODE = YES;
+				INFOPLIST_FILE = "Logarun WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.andrew.run-logger.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "watchsimulator watchos";
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		498661E71CD1710700C213D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "Logarun WatchKit Extension/Logarun WatchKit Extension.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = QN7G2R8TK6;
+				ENABLE_BITCODE = YES;
+				INFOPLIST_FILE = "Logarun WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.andrew.run-logger.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "watchsimulator watchos";
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		498661EA1CD1710700C213D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = QN7G2R8TK6;
+				IBSC_MODULE = Logarun_WatchKit_Extension;
+				INFOPLIST_FILE = "Logarun WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.andrew.run-logger.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "watchsimulator watchos";
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		498661EB1CD1710700C213D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = QN7G2R8TK6;
+				IBSC_MODULE = Logarun_WatchKit_Extension;
+				INFOPLIST_FILE = "Logarun WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.andrew.run-logger.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "watchsimulator watchos";
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		498661EE1CD1710700C213D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Logarun/Logarun.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = QN7G2R8TK6;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = Logarun/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.andrew.run-logger";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		498661EF1CD1710700C213D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Logarun/Logarun.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = QN7G2R8TK6;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = Logarun/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.andrew.run-logger";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		498661F11CD1710700C213D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = LogarunTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.andrew.LogarunTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Run Logger.app/Run Logger";
+			};
+			name = Debug;
+		};
+		498661F21CD1710700C213D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = LogarunTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.andrew.LogarunTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Run Logger.app/Run Logger";
+			};
+			name = Release;
+		};
+		498661F41CD1710700C213D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = LogarunUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.andrew.LogarunUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Logarun;
+			};
+			name = Debug;
+		};
+		498661F51CD1710700C213D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = LogarunUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.andrew.LogarunUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Logarun;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		498661891CD1710700C213D4 /* Build configuration list for PBXProject "Run Logger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				498661E31CD1710700C213D4 /* Debug */,
+				498661E41CD1710700C213D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		498661E51CD1710700C213D4 /* Build configuration list for PBXNativeTarget "Run Logger WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				498661E61CD1710700C213D4 /* Debug */,
+				498661E71CD1710700C213D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		498661E91CD1710700C213D4 /* Build configuration list for PBXNativeTarget "Run Logger WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				498661EA1CD1710700C213D4 /* Debug */,
+				498661EB1CD1710700C213D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		498661ED1CD1710700C213D4 /* Build configuration list for PBXNativeTarget "Run Logger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				498661EE1CD1710700C213D4 /* Debug */,
+				498661EF1CD1710700C213D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		498661F01CD1710700C213D4 /* Build configuration list for PBXNativeTarget "Run LoggerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				498661F11CD1710700C213D4 /* Debug */,
+				498661F21CD1710700C213D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		498661F31CD1710700C213D4 /* Build configuration list for PBXNativeTarget "Run LoggerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				498661F41CD1710700C213D4 /* Debug */,
+				498661F51CD1710700C213D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 498661861CD1710700C213D4 /* Project object */;
+}

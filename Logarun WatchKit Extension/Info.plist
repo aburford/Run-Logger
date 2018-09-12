@@ -5,7 +5,7 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleDisplayName</key>
-	<string>Logarun WatchKit Extension</string>
+	<string>Run Logger</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
@@ -17,27 +17,22 @@
 	<key>CFBundlePackageType</key>
 	<string>XPC!</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.0</string>
+	<string>1.1.2</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleVersion</key>
-	<string>1</string>
-	<key>CLKComplicationPrincipalClass</key>
-	<string>ComplicationController</string>
-	<key>CLKComplicationSupportedFamilies</key>
-	<array>
-		<string>CLKComplicationFamilyModularSmall</string>
-		<string>CLKComplicationFamilyModularLarge</string>
-		<string>CLKComplicationFamilyUtilitarianSmall</string>
-		<string>CLKComplicationFamilyUtilitarianLarge</string>
-		<string>CLKComplicationFamilyCircularSmall</string>
-	</array>
+	<string>2</string>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
 	<key>NSExtension</key>
 	<dict>
 		<key>NSExtensionAttributes</key>
 		<dict>
 			<key>WKAppBundleIdentifier</key>
-			<string>com.andrew.Logarun.watchkitapp</string>
+			<string>com.andrew.run-logger.watchkitapp</string>
 		</dict>
 		<key>NSExtensionPointIdentifier</key>
 		<string>com.apple.watchkit</string>
